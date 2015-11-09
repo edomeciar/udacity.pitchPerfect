@@ -15,7 +15,6 @@
 		5C6CFFC51BE252890087592C /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CFFC41BE252890087592C /* Pitch_PerfectTests.swift */; };
 		5C6CFFD01BE252890087592C /* Pitch_PerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CFFCF1BE252890087592C /* Pitch_PerfectUITests.swift */; };
 		5C6CFFE01BE80F3B0087592C /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CFFDF1BE80F3B0087592C /* PlaySoundViewController.swift */; };
-		5C6CFFE21BE819CC0087592C /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C6CFFE11BE819CC0087592C /* movie_quote.mp3 */; };
 		5C6CFFE51BE9876B0087592C /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CFFE41BE9876B0087592C /* RecordedAudio.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		5C6CFFCF1BE252890087592C /* Pitch_PerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectUITests.swift; sourceTree = "<group>"; };
 		5C6CFFD11BE252890087592C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C6CFFDF1BE80F3B0087592C /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundViewController.swift; path = ../PlaySoundViewController.swift; sourceTree = "<group>"; };
-		5C6CFFE11BE819CC0087592C /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../movie_quote.mp3; sourceTree = "<group>"; };
 		5C6CFFE41BE9876B0087592C /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +135,6 @@
 		5C6CFFE31BE81A0D0087592C /* Supporting FIles */ = {
 			isa = PBXGroup;
 			children = (
-				5C6CFFE11BE819CC0087592C /* movie_quote.mp3 */,
 			);
 			name = "Supporting FIles";
 			sourceTree = "<group>";
@@ -248,7 +245,6 @@
 			files = (
 				5C6CFFBA1BE252890087592C /* LaunchScreen.storyboard in Resources */,
 				5C6CFFB71BE252890087592C /* Assets.xcassets in Resources */,
-				5C6CFFE21BE819CC0087592C /* movie_quote.mp3 in Resources */,
 				5C6CFFB51BE252890087592C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
