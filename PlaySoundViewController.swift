@@ -23,7 +23,6 @@ class PlaySoundViewController: UIViewController {
         audioEngine = AVAudioEngine()
         audioFile = try! AVAudioFile(forReading: recievedAudio.filePathUrl)
         setSessionPlayerOn()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -32,7 +31,6 @@ class PlaySoundViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func stopToBeggining(){
@@ -43,21 +41,22 @@ class PlaySoundViewController: UIViewController {
     }
     
     @IBAction func playSnailSound(sender: UIButton) {
-        stopToBeggining()
-        player.rate = 0.5
-        player.volume = 1.0
-        player.play()
+        playAudioWithVariableRate(0.5)
     }
     
     @IBAction func playFastSound(sender: UIButton) {
-        stopToBeggining()
-        player.rate = 1.5
-        player.volume = 1.0
-        player.play()
+        playAudioWithVariableRate(1.5)
     }
 
     @IBAction func playChipmunk(sender: UIButton) {
         playAudioWithVariablePitch(1000)
+    }
+    
+    func playAudioWithVariableRate(rate: Float){
+        stopToBeggining()
+        player.rate = rate
+        player.volume = 1.0
+        player.play()
     }
     
     func playAudioWithVariablePitch(pitch: Float){
@@ -115,15 +114,5 @@ class PlaySoundViewController: UIViewController {
         } catch _ {
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
